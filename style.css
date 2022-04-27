@@ -1,0 +1,65 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+
+.heart{
+	margin: 150px;
+	margin-left: 580px;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	background-color: green;
+	transform: rotate(-45deg);
+	animation-name: animaçao;
+	animation-delay: 4s;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+.heart:before,
+.heart:after{
+	content: "";
+	background-color: green;
+	border-radius: 50%;
+	height: 200px;
+	position: absolute;
+	width: 200px;
+	animation-name: animaçao;
+	animation-delay: 4s;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+
+}
+
+.heart:before{
+	top: -100px;
+}
+
+.heart:after{
+	left: 100px;
+}
+
+@keyframes animaçao{
+	0%{
+		background-color: green;
+	}
+	20%{
+		background-color: blue;
+	}
+	50%{
+		background-color:yellow ;
+	}
+	70%{
+		background-color: orange;
+	}
+
+	100%{
+		background-color: red;
+	}
+}
+
